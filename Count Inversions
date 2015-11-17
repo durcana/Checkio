@@ -1,0 +1,14 @@
+#Input: A sequence as a tuple of integers.
+#Output: The inversion number as an integer.
+
+def count_inversion(sequence):
+    
+    inversions = 0
+    sequence = list(sequence)
+    for i in range(len(sequence)):
+        for j in range(i+1, len(sequence)):            
+            if sequence[i] > sequence[j]:
+                inversions += 1
+                sequence[i], sequence[j] = sequence[j], sequence[i]
+            
+    return inversions
