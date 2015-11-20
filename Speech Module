@@ -1,5 +1,5 @@
 #Input: A number as an integer.
-#Output: The string representation of the number as a string.
+#Output: The string representation of the number.
 
 
 FIRST_TWENTY = ["one", "two", "three", "four", "five", "six", "seven",
